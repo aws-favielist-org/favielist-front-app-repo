@@ -68,7 +68,7 @@ jobs:
       - name: Checkout kustomize repository
         uses: actions/checkout@v2
         with:
-          repository: aws-favielist-org/favielist-k8s-manifest-repo
+          repository: /favielist-k8s-manifest-repo
           ref: main
           token: ${{ secrets.ACTION_TOKEN }}
           path: favielist-k8s-manifest-repo
@@ -84,7 +84,7 @@ jobs:
 
       - name: Commit files
         run: |
-          cd k8s-manifest-repo
+          cd favielist-k8s-manifest-repo
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
           git commit -am "Update image tag"
