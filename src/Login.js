@@ -62,7 +62,7 @@ export default function Login() {
                 className="bg-[#FFD177] w-full rounded-md shadow-sm px-4 py-3
                 text-white text-[18px] font-medium text-center"
                 onClick={btnLogin}>
-               Login2
+               Login
             </button>
           
             <Link to="/signup" className="no-underline">
