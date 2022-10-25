@@ -68,7 +68,7 @@ jobs:
       - name: Checkout kustomize repository
         uses: actions/checkout@v2
         with:
-          repository: /favielist-k8s-manifest-repo
+          repository: aws-favielist-org/favielist-k8s-manifest-repo
           ref: main
           token: ${{ secrets.ACTION_TOKEN }}
           path: favielist-k8s-manifest-repo
